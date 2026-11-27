@@ -36,21 +36,21 @@ Then refresh the website tab to see the result.
 - Removing a photo takes it off the site but leaves the file in `photos/`.
   Delete leftover files there by hand if you want to tidy up.
 
-## Publish it (free)
+## The live site (GitHub Pages)
 
-**Easiest: Netlify Drop**
-1. Go to https://app.netlify.com/drop
-2. Drag this whole folder onto the page. You get a live link in seconds.
-3. Claim it: sign up or log in (free) when Netlify offers it. Until you do, the
-   link is behind a temporary password and the site is removed after a while.
-4. If friends still can't open it, set the project to public in its settings.
-5. Optional: give it a nicer address (`something.netlify.app`) by changing the
-   project name, or connect your own domain (e.g. `tetianafedotova.com`, about
-   $10–15/year from any domain registrar).
+- Website: https://mesopotania.github.io/tetiana-fedotova/
+- Repository: https://github.com/mesopotania/tetiana-fedotova
 
-To update the live site: make changes in the editor, press Save, then open your
-project on Netlify and drag the folder onto the area under **Production deploys**.
-The editor itself is never shown on the public site (`_redirects` hides it).
+**To update the live site**
+1. Make your changes in the editor and press **Save changes**.
+2. Open **GitHub Desktop**. Your changes are listed on the left.
+3. Type a short summary at the bottom left (e.g. "New photos"), click
+   **Commit to main**, then **Push origin** at the top.
+4. The website updates within a minute or two. Refresh it to check.
+
+The editor is never uploaded (`.gitignore` keeps it on this computer only).
+Optional later: connect your own domain (e.g. `tetianafedotova.com`, about
+$10–15/year from any domain registrar) under the repository's Settings → Pages.
 
 ## Files
 
@@ -63,4 +63,6 @@ The editor itself is never shown on the public site (`_redirects` hides it).
 | `contact.html` | Info & Contact |
 | `photos/` | Your images |
 | `assets/` | Design and code (`style.css` holds colours, sizes and the wordmark spacing) |
-| `_redirects` | Tells Netlify to keep the editor private |
+| `.gitignore` | Keeps the editor off GitHub (and so off the public site) |
+| `.nojekyll` | Tells GitHub Pages to publish the files as they are |
+| `_redirects` | Keeps the editor private if you ever use Netlify instead |
