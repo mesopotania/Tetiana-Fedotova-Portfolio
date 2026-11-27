@@ -1,0 +1,10 @@
+# The editor only works on your computer, so it isn't put on the public site.
+editor.html
+assets/editor/
+
+# Sample images from the first version (not used on the site)
+photos/**/placeholder-*.svg
+
+# Windows / OneDrive extras
+desktop.ini
+Thumbs.db

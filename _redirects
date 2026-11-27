@@ -1,0 +1,5 @@
+# Netlify: keep the editor off the public site (it only works on your computer anyway)
+/editor.html        /  301!
+/editor             /  301!
+/assets/editor/*    /  301!
+/README.md          /  301!
